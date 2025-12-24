@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace GestionReservations
+{ 
+
 public abstract class Organisation{
 
     public string Nom{ get ; set;}
@@ -14,4 +17,4 @@ public abstract class Organisation{
 
     public abstract void AfficherRecapitulatif();
 
-}
+}}
