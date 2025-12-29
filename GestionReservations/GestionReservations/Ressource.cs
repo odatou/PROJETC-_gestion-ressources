@@ -14,14 +14,17 @@ namespace GestionReservations
         public TypeRessource Type { get; set; }
         public bool EstDisponible { get; set; } = true;
 
-        public override void AfficherRecapitulatif()
-        {
-            Console.WriteLine("RESSOURCE ");
-            Console.WriteLine($"Nom          : {Nom}");
-            Console.WriteLine($"Type         : {Type}");
-            Console.WriteLine($"Adresse      : {Adresse}");
-            Console.WriteLine($"Email        : {Email}");
-            Console.WriteLine($"Disponible   : {(EstDisponible ? "Oui" : "Non")}");
-        }
-    }
+       public override void AfficherRecapitulatif()
+{
+    Console.WriteLine("=====================================");
+    Console.WriteLine("        RÉCAPITULATIF DE RÉSERVATION");
+    Console.WriteLine("=====================================\n");
+
+    Console.WriteLine("RESSOURCE");
+   
+    Console.WriteLine($"Type : {Type}");
+    Console.WriteLine($"Nom         : {Nom}");
+    Console.WriteLine($"Contact     : {Email}");
+
+    }}
 }
